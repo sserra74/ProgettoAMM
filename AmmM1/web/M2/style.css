@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-mar-2017, 11.11.51
+    Author     : Sergio
+*/
+
+body
+{
+    background-color: #ffffff;
+    font: 17px/25px "Palatino Linotype", Arial, sans-serif;
+}
+
+
+
+h1
+{
+    color: #111111;
+    font:28px/40px "Palatino Linotype",Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2
+{
+    color: #111111;
+    font:21px/40px "Palatino Linotype",Arial, sans-serif;
+    font-weight: bold;
+}
+
+h3
+{
+    color: #111111;
+    font:16px/40px "Palatino Linotype",Arial, sans-serif;
+    font-weight: bold;
+}
+
+a:link, a:visited /* al tag a associamo un link (link non ancora visitati). Se a è un link OR link visitato*/
+{
+    text-decoration: none; /* il testo non è più sottolineato*/
+    color: #ffffff;
+}
+
+a:hover /*quando si passa con il puntatore sopra il link*/
+{
+  font-weight: bold;
+  
+  
+}
+
+nav
+{
+    background-color: #323232;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* x,y, dimensione {colora ombra}*/ 
+    height: 60px;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+       
+}
+nav ol, nav li
+{
+
+    list-style-type:none; /*niente stile per lista (toglie i numeri)*/
+    padding: 0px;
+    display: inline-block;
+   
+  
+}
+
+
+nav li a{
+  
+  padding:20px 30px;
+  color:#ffffff;
+  
+}
+
+nav li.active{
+    text-decoration: underline;
+    background-color: #009933;
+}
+
+
+header
+{
+    font: 35px/50px "Comic Sans MS", Arial, sans-serif;
+    text-align: left;
+}
+
+.profilo
+{
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-left:auto;
+    margin-right:auto;
+    width:70%
+}
+.profilo
+{
+   
+   
+}
