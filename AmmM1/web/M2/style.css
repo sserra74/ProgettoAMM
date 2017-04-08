@@ -10,7 +10,7 @@ and open the template in the editor.
 
 body
 {
-    background-color: #ffffff;
+    background-color: #d5d2cc;
     font: 17px/25px "Palatino Linotype", Arial, sans-serif;
 }
 
@@ -37,13 +37,13 @@ h3
     font-weight: bold;
 }
 
-a:link, a:visited /* al tag a associamo un link (link non ancora visitati). Se a è un link OR link visitato*/
+a:link, a:visited 
 {
-    text-decoration: none; /* il testo non è più sottolineato*/
-    color: #ffffff;
+    text-decoration: none; 
+  
 }
 
-a:hover /*quando si passa con il puntatore sopra il link*/
+a:hover
 {
   font-weight: bold;
   
@@ -52,13 +52,12 @@ a:hover /*quando si passa con il puntatore sopra il link*/
 
 nav
 {
-    background-color: #323232;
+    background-color:#323232;
     text-align: left;
     box-shadow: 0 0 10px rgba(0,0,0,0.3); /* x,y, dimensione {colora ombra}*/ 
     height: 60px;
     width:70%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:250px
        
 }
 nav ol, nav li
@@ -74,33 +73,180 @@ nav ol, nav li
 
 nav li a{
   
-  padding:20px 30px;
+  padding:18px 30px;
   color:#ffffff;
   
 }
 
-nav li.active{
-    text-decoration: underline;
+nav li .active
+{
+    text-decoration: none;
     background-color: #009933;
+    
+}
+
+/*BACHECA*/
+.rilievo h2
+{
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    padding:0px;
+    padding-left:3px;
+    border: 1px solid;
+    border-color:#009933;
+    border-right: none;
+    border-left:none;
+}
+#sidebar
+{
+    float:left;
+    width: 170px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-left:34px;
+    position:fixed;
+    font-weight: bold;
+}
+#p_online p 
+{
+  margin-left:6px;
+}
+#p_online p::before
+{
+    content: url(img/utente.jpg);
+    
 }
 
 
+.gr1::before
+{
+    content: url(img/netflix.png);
+    
+    
+}
+
+.gr2::before
+{
+    content: url(img/pen.jpg);
+}
 header
 {
     font: 35px/50px "Comic Sans MS", Arial, sans-serif;
     text-align: left;
+    background-color: #323232;;
+    float:left;
+    width:173px;
+    height:60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-left:34px;
+    text-align:center;
+    
+}
+
+#title h1
+{
+    color:#ffffff;
+    
+    /*color:#009933;*/
+    margin-top:6px;
+    
 }
 
 .profilo
 {
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    margin-left:auto;
-    margin-right:auto;
-    width:70%
+    margin-left:250px;
+    width:70%;
+    margin-top:10px
 }
-.profilo
+
+.image
 {
+   margin-left:8px;
+   padding-top:14px;
+  
+}
+.image img
+{
+  
+    border: 3px solid;
+    border-radius:15px 30px;
+    width: 80px;
+    border-color: #009933;
+}
+
+.name
+{  
    
+  
+  position: relative;
+  top:-100px;
+  left: 105px;
    
+}
+
+.content p
+{
+    position:relative;
+    top:-50px;
+    margin-left:8px;
+}
+
+.content img{
+    margin-left:140px;
+   
+}
+
+.content a
+{
+  position: relative;
+  top:-50px;
+  left: 10px;
+}
+
+/*FINE BACHECA*/
+
+#formLogin
+{
+    
+    margin:auto;
+    background-color: #ffffff;
+    width:340px;
+    height:200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    padding-left:160px;
+}
+#formLogin input
+{
+    
+    margin-bottom:10px;
+}
+
+#formLogin button
+{
+    margin-top:10px;
+    width:175px;
+    display:block;
+   
+}
+#formLogin label
+{
+    font-size:20px;
+    font-weight: bold;
+}
+#formLogin label::after, label::before
+{
+    content:'\A';
+    white-space: pre;
+    font-size: 20px;
+    margin-top:5px;font-size:20px;
+    font-weight: bold;
+}
+
+#textLogin
+{
+   text-align:center;
+   font-weight: bold;
+   font-size:20px;
 }
