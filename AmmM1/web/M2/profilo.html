@@ -17,39 +17,62 @@
         </header>
         
             <nav>
-                <h2>MENU:</h2>
                 <ol>
                     <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a class="active" href="profilo.html">Profilo</a></li>
+                    <li><a href="bacheca.html">Bacheca</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ol>
             </nav>
         
+        
         <div id="divBody">
-            <div id="Form">
+            
+            <div id="sidebar">
+            <div id="p_online">
+                <div class="rilievo">
+                    <h2>Persone</h2>
+                </div>
+                <p>Pinco Pallino</p>
+                 <p>Riccardo Rossi</p>
+                 <p>Mario Bianchi</p>
+            </div>
+             
+            <div class="rilievo">
+                <h2>Gruppi</h2> 
+            </div>
+            <p class="gr1">Netflix</p>
+            <p class="gr2">Scrittori</p>
+        </div>
+         
+            <div id="imgProfilo">
+                <img title="Profiloimg" alt="Immagine Profilo" src="img/Gs.jpg">
+            </div>
+            <div id="formProfilo">
                 <form action="#" method="post">
                     
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" value="Gerry">
 
                         <label for="cognome">Cognome</label>
-                        <input type="text" name="cognome" id="cognome">
+                        <input type="text" name="cognome" id="cognome" value="Scotti">
 
                         <label for="url">URL</label>
-                        <input type="url" name="url" id="url">
+                        <input type="url" name="url" id="url" value="http://www.gerryscotti.com/">
 
                         <label for="frase">Frase di presentazione</label>
-                        <textarea cols="30" rows="2" id="frase" name="frase"></textarea>
+                        <textarea cols="30" rows="2" id="frase" name="frase">Sono un presentatore</textarea>
 
                         <label for="data">Data di nascita</label>
-                        <input type="date" name="data" id="data">
+                        <input type="date" name="data" id="data" value="1956-01-06">
 
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" value="canale5">
 
                         <label for="Confpassword">Conferma Password</label>
-                        <input type="password" name="Confpassword" id="Confpassword">
+                        <input type="password" name="Confpassword" id="Confpassword" value="canale5">
                         
-                        <button type="submit">Invia</button>
+                        <button type="submit">Aggiorna</button>
                     
                 </form>
             </div>

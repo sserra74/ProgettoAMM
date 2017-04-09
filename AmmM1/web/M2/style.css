@@ -46,8 +46,6 @@ a:link, a:visited
 a:hover
 {
   font-weight: bold;
-  
-  
 }
 
 nav
@@ -57,8 +55,9 @@ nav
     box-shadow: 0 0 10px rgba(0,0,0,0.3); /* x,y, dimensione {colora ombra}*/ 
     height: 60px;
     width:70%;
-    margin-left:250px
-       
+    margin-left:250px;
+    
+    
 }
 nav ol, nav li
 {
@@ -66,16 +65,20 @@ nav ol, nav li
     list-style-type:none; /*niente stile per lista (toglie i numeri)*/
     padding: 0px;
     display: inline-block;
-   
+    float:left;
   
 }
 
 
 nav li a{
   
-  padding:18px 30px;
+  padding:18px 28px;
+  padding-bottom:19px;
   color:#ffffff;
-  
+}
+nav li a:hover:not(.active)
+{
+    background-color:#222222;
 }
 
 nav li .active
@@ -83,7 +86,31 @@ nav li .active
     text-decoration: none;
     background-color: #009933;
     
+    
 }
+
+
+/*#Logout
+{
+   position:relative;
+   top:-70px;
+   left:900px; 
+   color:#ffffff;
+   font-size:14px;
+   height:60px;
+   
+}
+#Logout label
+{
+    margin-top:20px;
+}
+#Logout a
+{
+    padding:18px 30px;
+    color:#ffffff;
+    font-size:11px;
+    
+}*/
 
 /*BACHECA*/
 .rilievo h2
@@ -100,12 +127,13 @@ nav li .active
 #sidebar
 {
     float:left;
-    width: 170px;
+    width: 173px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     margin-left:34px;
     position:fixed;
     font-weight: bold;
+    
 }
 #p_online p 
 {
@@ -158,7 +186,7 @@ header
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     margin-left:250px;
     width:70%;
-    margin-top:10px
+    margin-top:10px;
 }
 
 .image
@@ -178,12 +206,10 @@ header
 
 .name
 {  
-   
   
   position: relative;
   top:-100px;
-  left: 105px;
-   
+  left: 105px;  
 }
 
 .content p
@@ -195,7 +221,6 @@ header
 
 .content img{
     margin-left:140px;
-   
 }
 
 .content a
@@ -207,6 +232,12 @@ header
 
 /*FINE BACHECA*/
 
+input:focus
+{
+    background-color: #009933;
+}
+
+/*LOGIN*/
 #formLogin
 {
     
@@ -216,12 +247,15 @@ header
     height:200px;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     padding-left:160px;
+    margin-top:220px;
 }
 #formLogin input
 {
     
     margin-bottom:10px;
 }
+
+
 
 #formLogin button
 {
@@ -233,20 +267,127 @@ header
 #formLogin label
 {
     font-size:20px;
-    font-weight: bold;
+    font-weight: bold; 
+    
 }
 #formLogin label::after, label::before
 {
     content:'\A';
     white-space: pre;
-    font-size: 20px;
-    margin-top:5px;font-size:20px;
-    font-weight: bold;
+    margin-top:5px;
+   
 }
 
-#textLogin
+/*#textLogin
 {
    text-align:center;
    font-weight: bold;
    font-size:20px;
+}*/
+
+#navLogin
+{
+    display:none;
+}
+#headerLogin
+{
+   margin-left:425px;
+   margin-top:-70px;
+   width:500px;
+   
+   
+}
+
+#titleLogin h1
+{
+  
+   margin-top:10px;
+   color: #ffffff;
+   
+   
+}
+
+/*FINE LOGIN*/
+
+/*PROFILO*/
+#formProfilo
+{
+   margin-left:250px;
+   margin-top:10px;
+   background-color: #ffffff;
+   width:945px;
+   height:363px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+#formProfilo form
+{
+    
+    margin-top:20px;
+    margin-left:220px;
+   /*content: url(img/Gs.jpg);*/
+}
+#formProfilo label
+{
+    font-weight:bold;
+}
+
+#formProfilo input
+{
+   width:228px;
+}
+#nome
+{
+    margin-left:145px;
+}
+
+#cognome
+{
+    margin-left:117px;
+}
+
+#url
+{
+    margin-left:156px;
+}
+
+#frase
+{
+    margin-left:18px;
+    margin-top:5px;
+}
+
+#data
+{
+    margin-left:77px;
+}
+
+#password
+{
+    margin-left:118px;
+}
+
+#Confpassword
+{
+    margin-left:36px;
+}
+
+#formProfilo button
+{
+    width:430px;
+    display:block;
+    margin-top:30px;
+}
+#imgProfilo
+{
+  margin-left:270px;
+  margin-top:30px;
+  float:left;  
+}
+#imgProfilo img
+{
+   border: 3px solid;
+   border-radius:15px 30px;
+   border-color: #009933;
+   
 }
