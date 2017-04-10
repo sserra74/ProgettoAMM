@@ -85,32 +85,35 @@ nav li .active
 {
     text-decoration: none;
     background-color: #009933;
-    
-    
 }
 
-
-/*#Logout
+#logout
 {
-   position:relative;
-   top:-70px;
-   left:900px; 
-   color:#ffffff;
-   font-size:14px;
-   height:60px;
+   float:right;
+   margin-right:80px;
+   margin-top:-15px;
    
 }
-#Logout label
+#logout h3
 {
-    margin-top:20px;
+   color:#ffffff;
 }
-#Logout a
+#logout a
 {
-    padding:18px 30px;
-    color:#ffffff;
+   
+    position:relative;
+    bottom:28px;
+    margin-left:33px;
     font-size:11px;
-    
-}*/
+    color: #ffffff;
+    text-decoration: underline;
+}
+#logout h3:before
+{
+    content: url("img/Gs2.jpg");
+    position:relative;
+    top:4px;  
+}
 
 /*BACHECA*/
 .rilievo h2
@@ -221,6 +224,7 @@ header
 
 .content img{
     margin-left:140px;
+    width:60%;
 }
 
 .content a
@@ -232,11 +236,18 @@ header
 
 /*FINE BACHECA*/
 
-input:focus
+input:focus, textarea:focus
 {
-    background-color: #009933;
+    border: 2px solid #009933;
+    
 }
-
+ button
+ {
+     background-color: #009933;
+     color:#ffffff;
+     border: 1px solid green;
+     border-radius: 5px;
+ }
 /*LOGIN*/
 #formLogin
 {
@@ -251,11 +262,8 @@ input:focus
 }
 #formLogin input
 {
-    
     margin-bottom:10px;
 }
-
-
 
 #formLogin button
 {
@@ -291,11 +299,13 @@ input:focus
 }
 #headerLogin
 {
-   margin-left:425px;
-   margin-top:-70px;
+   position:absolute;
+   left:0.1%;
+   right:0.1%;
    width:500px;
-   
-   
+   margin: auto;
+   margin-top:-70px;
+
 }
 
 #titleLogin h1
@@ -303,10 +313,7 @@ input:focus
   
    margin-top:10px;
    color: #ffffff;
-   
-   
 }
-
 /*FINE LOGIN*/
 
 /*PROFILO*/
@@ -315,8 +322,8 @@ input:focus
    margin-left:250px;
    margin-top:10px;
    background-color: #ffffff;
-   width:945px;
-   height:363px;
+   width:70%;
+   height:354px;
    box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
@@ -391,3 +398,4 @@ input:focus
    border-color: #009933;
    
 }
+
