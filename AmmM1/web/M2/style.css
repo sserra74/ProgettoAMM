@@ -567,7 +567,7 @@ nav li .active
 
     #formProfilo button
     {
-        width:180px;
+        width:82%;
        
         margin-top:9px;
         margin-bottom:20px;
@@ -903,7 +903,7 @@ nav li .active
     
     #formProfilo button
     {
-        width:430px;
+        width:62%;
         display:block;
         margin-top:30px;
     }
