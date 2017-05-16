@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nerdbook - Bacheca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sergio Serra">
+        <meta name="keywords" content="NerdbookProfilo ProfiloNerdbook Profilo">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                <h1>Nerdbook</h1>
+            </div>
+        </header>
+        
+            <nav>
+                <ol>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a class="active" href="profilo.html">Profilo</a></li>
+                    <li><a href="bacheca.html">Bacheca</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ol>
+                <div id="logout">
+                <h3 id="h3special"> Gerry Scotti</h3>
+                <a href="#">Logout</a>
+                </div>
+            </nav>
+        
+        
+        <div id="divBody">
+            
+            <div id="sidebar">
+            <div id="p_online">
+                <div class="rilievo">
+                    <h2>Persone</h2>
+                </div>
+                <p>Pinco Pallino</p>
+                 <p>Riccardo Rossi</p>
+                 <p>Mario Bianchi</p>
+            </div>
+             
+            <div class="rilievo">
+                <h2>Gruppi</h2> 
+            </div>
+            <p class="gr1">Netflix</p>
+            <p class="gr2">Scrittori</p>
+        </div>
+         
+            
+            <div id="formProfilo">
+                <div id="imgProfilo">
+                   <img title="Profiloimg" alt="Immagine Profilo" src="img/Gs.jpg">
+                </div>
+                <form action="#" method="post">
+                    
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" value="Gerry">
+
+                        <label for="cognome">Cognome</label>
+                        <input type="text" name="cognome" id="cognome" value="Scotti">
+
+                        <label for="url">Immagine del profilo</label>
+                        <input type="url" name="url" id="url" value="http://biografieonline.it/img/bio/box/g/Gerry_Scotti.jpg">
+
+                        <label for="frase">Frase di presentazione</label>
+                        <textarea cols="30" rows="2" id="frase" name="frase">Sono un presentatore</textarea>
+
+                        <label for="data">Data di nascita</label>
+                        <input type="date" name="data" id="data" value="1956-01-06">
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" value="canale5">
+
+                        <label for="Confpassword">Conferma Password</label>
+                        <input type="password" name="Confpassword" id="Confpassword" value="canale5">
+                        
+                        <button type="submit">Aggiorna</button>
+                    
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

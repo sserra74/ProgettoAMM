@@ -52,7 +52,7 @@ public class PostFactory
         post4.setId_utente(userFactory.getUserId(2));
        
         Post post5 = new Post();
-        post5.setId(3);
+        post5.setId(4);
         post5.setContent("\"http://www.rai.it/programmi/sanremo/\"");
         post5.setId_utente(userFactory.getUserId(2));
         post5.setPostType(Post.Type.LINK);
@@ -86,7 +86,24 @@ public List getPostList(User usr)
             }
         }
         return listaPost;
+}
+
+public List getPostList(Gruppi gruppo) 
+{
+
+        List<Post> listaPost = new ArrayList<Post>();
+
+        for (Post post : this.listaPost) 
+        {
+            if (post.getId_gruppo().equals(gruppo)) {
+                listaPost.add(post);
+            }
+        }
+        return listaPost;
     }
       
     
 }
+      
+    
+

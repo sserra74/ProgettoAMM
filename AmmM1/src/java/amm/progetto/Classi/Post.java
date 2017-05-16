@@ -15,6 +15,7 @@ public class Post
     private String content;
     private Type postType;
     private User id_utente;
+    private Gruppi id_gruppo;
     
     public Post()
     {
@@ -22,6 +23,7 @@ public class Post
         content="";
         postType= Type.TEXT;
         id_utente=null;
+        id_gruppo= null;
     }
 
     /**
@@ -83,6 +85,20 @@ public class Post
     {
         TEXT, IMAGE, LINK
     };
+
+    /**
+     * @return the id_gruppo
+     */
+    public Gruppi getId_gruppo() {
+        return id_gruppo;
+    }
+
+    /**
+     * @param id_gruppo the id_gruppo to set
+     */
+    public void setId_gruppo(Gruppi id_gruppo) {
+        this.id_gruppo = id_gruppo;
+    }
     
     
     
